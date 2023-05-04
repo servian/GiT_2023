@@ -88,7 +88,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
   
   
   
-  [![Notebook](/images/clustervalues.png)]
+  [![Cluster Defination](/images/clustervalues.png)]
   
   
   
@@ -118,6 +118,48 @@ To run the shared notebooks , the user must have the mentioned resources set up 
    5. Access Mode : Single User
    
   * This fetches less cost.
+
+### Installing libraries in Cluster
+
+  * Open the Compute Tab as earlier.
+  * Open the cluster created by clicking on it.
+  * You will find "Libraries" option in the header , Select the "Libearies" Tab.
+  * Click on Install Libraries option.
+  * Select the PyPI option 
+  * Insert the name of above libraries (one at a time) in the Package test box.
+  * Click the  Install 
+
+
+
+  ![Library](/images/library.png)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ![Library Installation](/images/library.png)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
  
 
 
