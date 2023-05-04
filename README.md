@@ -58,9 +58,12 @@ To run the shared notebooks , the user must have the mentioned resources set up 
   
   
   
-  * Create a folder from the drop down available
-  * Navigate to the folder and select create from the dropdown.
-  * Select the Notebook option and a blank notebook will come up.
+  
+  * Navigate to the options and select Notebook from the dropdown.
+
+  [![Notebook](/images/CreateCompute.png)]
+
+  * A blank notebook will come up.
 
 ### Creating a cluster in  Databricks:
   * In the main page of the Databricks Account.
