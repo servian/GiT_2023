@@ -50,6 +50,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
  While in an active Databricks workspace , 
   * Navigate to Data Science and Engineering space.
   * Click on New button.
+  ![New Button](/images/New Button.png?raw=true "Optional Title")
   * Create a folder from the drop down available
   * Navigate to the folder and select create from the dropdown.
   * Select the Notebook option and a blank notebook will come up.
