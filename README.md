@@ -53,7 +53,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
 
 
 
-  [![New Button](/images/NewButton.png)]
+  [![New Button](/images/Notebook.png)]
   
   
   
@@ -72,6 +72,14 @@ To run the shared notebooks , the user must have the mentioned resources set up 
 ### Creating a cluster in  Databricks:
   * In the main page of the Databricks Account.
   * Navigate to Compute option.
+  
+  
+  
+  [![Notebook](/images/NewButton.png)]
+  
+  
+  
+  
   * Click on the create cluster on the right side of the screen.
   * Fill in the option for a compute , for the below databricks solution the standard cluster properties will be enough.
   * This fetches less cost.
