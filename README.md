@@ -84,11 +84,38 @@ To run the shared notebooks , the user must have the mentioned resources set up 
   
   * Fill in the option for a compute , for the below databricks solution the standard cluster properties will be enough.
   
+  
+  
+  
+  
+  [![Notebook](/images/clustervalues.png)]
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
    For the demo purpose we have chosen,
    
    1. Databricks Runtime: 11.3 LTS (includes Apache Spark 3.3.0, Scala 2.12)
    2. Worker Type : Standard_DS3_V2
    3. Drive  Type : Standard_DS3_V2
+   4. Terminate after 10 minutes (until its required for a job, as it will incurr cost)
+   5. Access Mode : Single User
    
   * This fetches less cost.
  
