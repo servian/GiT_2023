@@ -1,6 +1,6 @@
-# GiT_2023
+%md
 
-### Hola! Welcome to today's workshop. Please find the below instructions for the workshop.
+###Hola! Welcome to today's workshop. Please find the below instructions for the workshop.
 
 ## INSTRUCTIONS
 ### Agenda of the Workshop:
@@ -13,7 +13,6 @@ To run the shared notebooks , the user must have the mentioned resources set up 
 * A Cloud Account with Active Subscription ( AWS, GCP, Azure, for the workshop we are running the demo on Azure Cloud).
 * Any api platform ( POSTMAN is being used for demo)
 * Cloud messaging Services ( We are using the Azure Bus Service for the demo)
-* Cloud Storage account to store the data.
 * A databricks workspace.
 * Key vault
 
@@ -24,7 +23,8 @@ To run the shared notebooks , the user must have the mentioned resources set up 
  * Once they created the account , they need to open a new page or tab clicking on the '+' sign.
  * On the new tab , select the option as "POST" if not selected, and insert the URL "https://databricksstreaming.servicebus.windows.net/topic1/messages"
  * The Header portion will contain the below options along with the additional options present:
-      * ['Key': Authorizaion, 'Value': Temporary Token will be shared]
+     The below is for a tempoprary set and won't be available after the session.
+      * ['Key': Authorizaion, 'Value': SharedAccessSignature sr=https%3A%2F%2Fdatabricksstreaming.servicebus.windows.net%2Ftopic1&sig=dCiyGYjowPsQBlw537yHzAzazWK/IGnWOIl2Xj2GGRM%3D&se=101682055697&skn=RootManageSharedAccessKey]
       * ['Key': Content-Type, 'Value': application/atom+xml;type=entry;charset=utf-8]
       * ['Key': x-ms-retrypolicy , 'Value': NoRetry]
  * The user need to send an answer in the Body section and type in the answer for the question as "How is your day going?"
@@ -37,7 +37,6 @@ To run the shared notebooks , the user must have the mentioned resources set up 
  * The user will be directed towards the account page of Databricks.
  * Create an community edition account by giving user's details and choosing the link below to proceed with community edition for any free trial of databricks.
  * Proceed to Azure databricks account.
- * Once in the databricks account , select the Data Engineering and Science space and create a folder as "GiT2023", we can proceed with creating or importing the shared notebooks in the same folder.
  * We also need to create the clusters to run the notebooks, load the respective libraries into the cluster to run the notebook.
  * List of libraries to be loaded as PyPI packages:
      * flax
@@ -46,16 +45,31 @@ To run the shared notebooks , the user must have the mentioned resources set up 
      * emoji
      * azure-servicebus
 
+
+### Creating a notebook in Databricks :
+ While in an active Databricks workspace , 
+  * Navigate to Data Science and Engineering space.
+  * Click on New button.
+  * Create a folder from the drop down available
+  * Navigate to the folder and select create from the dropdown.
+  * Select the Notebook option and a blank notebook will come up.
+
+### Creating a cluster in  Databricks:
+  * In the main page of the Databricks Account.
+  * Navigate to Compute option.
+  * Click on the create cluster on the right side of the screen.
+  * Fill in the option for a compute , for the below databricks solution the standard cluster properties will be enough.
+  * This fetches less cost.
+ 
+
+
 ### Notebooks:
-The following mentioned notebooks contains the code snippet for the below actions.
+The following notebook "name" contains the code snippet for the below actions.
+
 #### Notebook: message_processing
   * Calling the Azure Bus Service to get the messages. (an Azure Service Bus under the same create a topic and subscription to capture the data). 
-  * Please note that The Azure Bus Service is created earlier to the workshop and with all set up done, a temporary access token will be shared with user , to send the message to the Azure Bus Service.
-  * There are various methods to connect with the Azure Bus Service using various languages, Please refer to the link **[Azure Bus Service messages](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions?tabs=passwordless)**
-  * The message is stored in the datalake.
-  * Autoloader reading the messages and storing them into a table in delta lake and processing them.
-#### Notebook: model_training
-  * Reading the data from the delta lake.
+  * Please note that The Azure Bus Service is created earlier to the workshop and a temporary access token will be shared with user , to send the message to the Azure Bus Service.
   * Running a pre-trained transformer model for sentiment analysis. (Note:Pre-trained model are from hugging face which has been trained on previous data , more information can be obtained on the **[Huggingface Models list](https://huggingface.co/models)**)
   * Tagging the data with the orginal messages.
+  * Storing the predicted results in the delta lake
   * Visualizations in the dashboard will be demonstrated over the results of the model .
