@@ -1,6 +1,6 @@
-%md
+# GiT 2023
 
-###Hola! Welcome to today's workshop. Please find the below instructions for the workshop.
+### Hola! Welcome to today's workshop. Please find the below instructions for the workshop.
 
 ## INSTRUCTIONS
 ### Agenda of the Workshop:
