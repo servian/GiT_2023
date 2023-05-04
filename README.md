@@ -95,7 +95,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
 
 
 ### Notebooks:
-The following notebook "name" contains the code snippet for the below actions.
+The following notebook message_processing.py contains the code snippet for the below actions.
 
 #### Notebook: message_processing
   * Calling the Azure Bus Service to get the messages. (an Azure Service Bus under the same create a topic and subscription to capture the data). 
