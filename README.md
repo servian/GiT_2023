@@ -77,7 +77,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
   * Click on the create cluster on the right side of the screen.
 
 
-  <img width="444" alt="createcompute" src="https://user-images.githubusercontent.com/132027562/236168945-38c4a8e4-f3ad-4248-ac8a-14080726ee8a.png">
+  
   
   
   * Fill in the option for a compute , for the below databricks solution the standard cluster properties will be enough.
