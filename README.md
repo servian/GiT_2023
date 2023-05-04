@@ -61,7 +61,11 @@ To run the shared notebooks , the user must have the mentioned resources set up 
   
   * Navigate to the options and select Notebook from the dropdown.
 
-  [![Notebook](/images/CreateCompute.png)]
+   
+   
+   [![Notebook](/images/CreateCompute.png)]
+   
+   
 
   * A blank notebook will come up.
 
