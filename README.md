@@ -1,4 +1,4 @@
-### GiT_2023
+# GiT_2023
 
 ### Hola! Welcome to today's workshop. Please find the below instructions for the workshop.
 
