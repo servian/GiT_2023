@@ -69,7 +69,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
   
   
   
-  [![Notebook](/images/NewButton.png)]
+  ![Notebook](/images/NewButton.png)
   
   
   
@@ -78,7 +78,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
 
 
   
-  [![Notebook](/images/createcompute.png)]
+  ![Notebook](/images/createcompute.png)
   
   
   
@@ -88,7 +88,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
   
   
   
-  [![Cluster Defination](/images/clustervalues.png)]
+  ![Cluster Defination](/images/clustervalues.png)
   
   
   
@@ -145,7 +145,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
   
   
   
-  ![Library Installation](/images/library.png)
+  ![Library Installation](/images/libraryinstall.png)
   
   
   
