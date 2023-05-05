@@ -19,6 +19,8 @@ To run the shared notebooks , the user must have the mentioned resources set up 
 
 ### Using POSTMAN:
 
+The user will be using the POSTMAN to post messages to the Service Bus for the demo. The user needs to set up a Personal Postman Account for the same.
+
  * The users are required to open a **[POSTMAN free account](www.postman.com)**.
  * Create a workspace or can use if there is an external workspace.
  * Create a new collection.
