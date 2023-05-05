@@ -28,7 +28,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
  
  
  
- *curl --location 'https://databricksstreaming.servicebus.windows.net/topic1/messages' 
+ * curl --location 'https://databricksstreaming.servicebus.windows.net/topic1/messages' 
 --header 'Authorization: SharedAccessSignature sr=https%3A%2F%2Fdatabricksstreaming.servicebus.windows.net%2Ftopic1&sig=dCiyGYjowPsQBlw537yHzAzazWK/IGnWOIl2Xj2GGRM%3D&se=101682055697&skn=RootManageSharedAccessKey' 
 --header 'Content-Type: application/atom+xml;type=entry;charset=utf-8'
 --header 'x-ms-retrypolicy: NoRetry' 
