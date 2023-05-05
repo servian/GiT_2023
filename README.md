@@ -21,17 +21,23 @@ To run the shared notebooks , the user must have the mentioned resources set up 
 
  * The users are required to open a **[POSTMAN free account](www.postman.com)**.
  * Create a workspace or can use if there is an external workspace.
- * Create a new collection, change the operation to POST and Save it.
+ * Create a new collection.
  * Once they created the account , they need to open a new page or tab clicking on the '+' sign.
- * On the new tab , select the option as "POST" if not selected, and insert the URL "https://databricksstreaming.servicebus.windows.net/topic1/messages"
- * The Header portion will contain the below options along with the additional options present:
+ * On the new tab , select the option as "POST"
+ * Copy the below curl code and paste in the space against the post 
+ 
+ 
+ 
+ *curl --location 'https://databricksstreaming.servicebus.windows.net/topic1/messages' 
+--header 'Authorization: SharedAccessSignature sr=https%3A%2F%2Fdatabricksstreaming.servicebus.windows.net%2Ftopic1&sig=dCiyGYjowPsQBlw537yHzAzazWK/IGnWOIl2Xj2GGRM%3D&se=101682055697&skn=RootManageSharedAccessKey' 
+--header 'Content-Type: application/atom+xml;type=entry;charset=utf-8'
+--header 'x-ms-retrypolicy: NoRetry' 
+
+
+ * The Header portion will show three additional key as Authorization, Content-Type and x-ms-retrypolicy
  * Please note the Authorization Key Value to set up Postman API is a temporary token and will be invalid after the session.
  
-     The below is for a tempoprary set and won't be available after the session.
-     
-      * ['Key': Authorization, 'Value': SharedAccessSignature sr=https%3A%2F%2Fdatabricksstreaming.servicebus.windows.net%2Ftopic1&sig=dCiyGYjowPsQBlw537yHzAzazWK/IGnWOIl2Xj2GGRM%3D&se=101682055697&skn=RootManageSharedAccessKey]
-      * ['Key': Content-Type, 'Value': application/atom+xml;type=entry;charset=utf-8]
-      * ['Key': x-ms-retrypolicy , 'Value': NoRetry]
+ 
  * The user need to send an answer in the Body section and type in the answer for the question as "How is your day going?"
  * Click the Send button.
  * The messages will be sent to the Service Bus.
