@@ -29,7 +29,7 @@ To run the shared notebooks , the user must have the mentioned resources set up 
  
      The below is for a tempoprary set and won't be available after the session.
      
-      * ['Key': Authorizaion, 'Value': SharedAccessSignature sr=https%3A%2F%2Fdatabricksstreaming.servicebus.windows.net%2Ftopic1&sig=dCiyGYjowPsQBlw537yHzAzazWK/IGnWOIl2Xj2GGRM%3D&se=101682055697&skn=RootManageSharedAccessKey]
+      * ['Key': Authorization, 'Value': SharedAccessSignature sr=https%3A%2F%2Fdatabricksstreaming.servicebus.windows.net%2Ftopic1&sig=dCiyGYjowPsQBlw537yHzAzazWK/IGnWOIl2Xj2GGRM%3D&se=101682055697&skn=RootManageSharedAccessKey]
       * ['Key': Content-Type, 'Value': application/atom+xml;type=entry;charset=utf-8]
       * ['Key': x-ms-retrypolicy , 'Value': NoRetry]
  * The user need to send an answer in the Body section and type in the answer for the question as "How is your day going?"
