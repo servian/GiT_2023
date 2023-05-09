@@ -29,9 +29,12 @@ The user will be using the POSTMAN to post messages to the Service Bus for the d
  * Copy the below curl code and paste in the space against the post 
  
   curl --location 'https://databricksstreaming.servicebus.windows.net/topic1/messages' 
---header 'Authorization: SharedAccessSignature sr=https%3A%2F%2Fdatabricksstreaming.servicebus.windows.net%2Ftopic1&sig=dCiyGYjowPsQBlw537yHzAzazWK/IGnWOIl2Xj2GGRM%3D&se=101682055697&skn=RootManageSharedAccessKey' 
---header 'Content-Type: application/atom+xml;type=entry;charset=utf-8'
---header 'x-ms-retrypolicy: NoRetry' 
+  
+  --header 'Authorization: SharedAccessSignature sr=https%3A%2F%2Fdatabricksstreaming.servicebus.windows.net%2Ftopic1&sig=dCiyGYjowPsQBlw537yHzAzazWK/IGnWOIl2Xj2GGRM%3D&se=101682055697&skn=RootManageSharedAccessKey' 
+  
+  --header 'Content-Type: application/atom+xml;type=entry;charset=utf-8'
+  
+  --header 'x-ms-retrypolicy: NoRetry' 
 
 
  * The Header tab will show three additional key as Authorization, Content-Type and x-ms-retrypolicy
