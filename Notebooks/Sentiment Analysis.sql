@@ -5,7 +5,7 @@
 -- COMMAND ----------
 
 SELECT message
-FROM sentiment_analysis_result
+FROM git_demo.sentiment_analysis_result
 order by timestamp desc
 
 -- COMMAND ----------
@@ -16,7 +16,7 @@ order by timestamp desc
 -- COMMAND ----------
 
 SELECT DATE(timestamp) AS day, labels, COUNT(labels) AS total_message_count 
-FROM sentiment_analysis_result
+FROM git_demo.sentiment_analysis_result
 GROUP BY day, labels
 
 -- COMMAND ----------
@@ -27,7 +27,7 @@ GROUP BY day, labels
 -- COMMAND ----------
 
 SELECT labels, COUNT(labels) AS total_message_count 
-FROM sentiment_analysis_result
+FROM git_demo.sentiment_analysis_result
 GROUP BY labels
 
 -- COMMAND ----------
@@ -38,7 +38,7 @@ GROUP BY labels
 -- COMMAND ----------
 
 SELECT message, MAX(score) AS highest_score
-FROM sentiment_analysis_result
+FROM git_demo.sentiment_analysis_result
 WHERE DATE(timestamp) = CURRENT_DATE()
 AND labels = 'POS'
 GROUP BY message
@@ -53,7 +53,7 @@ LIMIT 1
 -- COMMAND ----------
 
 SELECT message, MAX(score) AS highest_score
-FROM sentiment_analysis_result
+FROM git_demo.sentiment_analysis_result
 WHERE DATE(timestamp) = CURRENT_DATE()
 AND labels = 'NEG'
 GROUP BY message
@@ -68,7 +68,7 @@ LIMIT 1
 -- COMMAND ----------
 
 SELECT message AS positive_messages
-FROM sentiment_analysis_result
+FROM git_demo.sentiment_analysis_result
 WHERE labels = 'POS'
 ORDER BY score DESC
 
@@ -80,7 +80,7 @@ ORDER BY score DESC
 -- COMMAND ----------
 
 SELECT message AS negative_messages
-FROM sentiment_analysis_result
+FROM git_demo.sentiment_analysis_result
 WHERE labels = 'NEG'
 ORDER BY score DESC
 
@@ -92,7 +92,7 @@ ORDER BY score DESC
 -- COMMAND ----------
 
 SELECT message AS negative_message, score AS message_weightage
-FROM sentiment_analysis_result
+FROM git_demo.sentiment_analysis_result
 WHERE labels = 'NEG'
 ORDER BY score DESC
 
