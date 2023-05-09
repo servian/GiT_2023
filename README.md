@@ -21,14 +21,12 @@ To run the shared notebooks , the user must have the mentioned resources set up 
 
 The user will be using the POSTMAN to post messages to the Service Bus for the demo. The user needs to set up a Personal Postman Account for the same.
 
- * The users are required to open a **[POSTMAN free account](www.postman.com)**.
+ * The users are required to open a **[POSTMAN free account](https://identity.getpostman.com/signup?_ga=2.251277637.2119795007.1683592372-826284656.1682049161)**.
  * Create a workspace or can use if there is an external workspace.
  * Create a new collection.
- * Once they created the account , they need to open a new page or tab clicking on the '+' sign.
+ * Once you created the account ,you need to open a new page/tab clicking on the '+' sign.
  * On the new tab , select the option as "POST"
  * Copy the below curl code and paste in the space against the post 
- 
- 
  
   curl --location 'https://databricksstreaming.servicebus.windows.net/topic1/messages' 
 --header 'Authorization: SharedAccessSignature sr=https%3A%2F%2Fdatabricksstreaming.servicebus.windows.net%2Ftopic1&sig=dCiyGYjowPsQBlw537yHzAzazWK/IGnWOIl2Xj2GGRM%3D&se=101682055697&skn=RootManageSharedAccessKey' 
@@ -36,15 +34,15 @@ The user will be using the POSTMAN to post messages to the Service Bus for the d
 --header 'x-ms-retrypolicy: NoRetry' 
 
 
- * The Header portion will show three additional key as Authorization, Content-Type and x-ms-retrypolicy
+ * The Header tab will show three additional key as Authorization, Content-Type and x-ms-retrypolicy
  * Please note the Authorization Key Value to set up Postman API is a temporary token and will be invalid after the session.
  
  
- * The user need to send an answer in the Body section and type in the answer for the question as "How is your day going?"
+ * You need to send a message in the Body section and type in the answer for the question as "How is your day going?"
  * Click the Send button.
  * The messages will be sent to the Service Bus.
 
-### Signing up for Databricks account:
+### Signing up for Databricks account (Optional):
 
  * Click the **[Try Databricks](https://www.databricks.com/try-databricks?_gl=1*304qnf*_ga*MzYxMjY1Nzk3LjE2ODI0ODIwNDI.*_ga_PQSEQ3RZQC*MTY4MjY0MjAxOS44LjEuMTY4MjY0MjA1Mi4yNy4wLjA.&_ga=2.130158927.1351879435.1682482042-361265797.1682482042#account)**
  * The user will be directed towards the account page of Databricks.
@@ -59,7 +57,7 @@ The user will be using the POSTMAN to post messages to the Service Bus for the d
      * azure-servicebus
 
 
-### Creating a notebook in Databricks :
+### Creating a notebook in Databricks (Optional) :
  While in an active Databricks workspace , 
   * Navigate to Data Science and Engineering space.
   * Click on New button.
