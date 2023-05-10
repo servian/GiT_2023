@@ -45,6 +45,14 @@ The user will be using the POSTMAN to post messages to the Service Bus for the d
  * Click the Send button.
  * The messages will be sent to the Service Bus.
 
+### Signing up for a free Azure account (Optional)
+
+https://azure.microsoft.com/en-us/free/
+
+### Create an Azure Service Bus topic and subscription (Optional)
+
+https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quickstart-topics-subscriptions-portal
+
 ### Signing up for Databricks account (Optional):
 
  * Click the **[Try Databricks](https://www.databricks.com/try-databricks?_gl=1*304qnf*_ga*MzYxMjY1Nzk3LjE2ODI0ODIwNDI.*_ga_PQSEQ3RZQC*MTY4MjY0MjAxOS44LjEuMTY4MjY0MjA1Mi4yNy4wLjA.&_ga=2.130158927.1351879435.1682482042-361265797.1682482042#account)**
